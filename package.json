@@ -1,0 +1,28 @@
+{
+  "name": "devis-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anais-H/Devis-API.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Anais HELOISE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anais-H/Devis-API/issues"
+  },
+  "homepage": "https://github.com/Anais-H/Devis-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1"
+  }
+}
