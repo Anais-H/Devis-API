@@ -1,0 +1,16 @@
+{
+  "development": {
+    "user": "",
+    "password": "",
+    "host": "",
+    "port": 1234,
+    "database": ""
+  },
+  "production": {
+    "user": "",
+    "password": "",
+    "host": "",
+    "port": 1234,
+    "database": ""
+  }
+}

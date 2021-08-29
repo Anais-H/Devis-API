@@ -1,21 +1,18 @@
 const express = require("express");
 
+const queries = require("../controllers/devisController");
+
 const router = express.Router();
 
 // devis table
 
-router.post("/devis", async(req, res) => {
-    try {
-        const newDevis = await pool.query(
-            "INSERT INTO devis (year, number, created_at)" +
-            "VALUES($1, $2, $3)" +
-            "RETURNING *",
-            [req.body.year, req.body.number, req.body.created_at]
-        );
+router.post("/devis/add", queries.addDevis);
 
-        res.json(newDevis.rows);
+router.get("/devis/get/:year/:number", queries.getDevis);
 
-    } catch (err) {
-        console.error("Err : " + err.message);
-    }
-});
+router.put("/devis/update/:year/:number", queries.putDevis);
+
+router.delete("/devis/delete/:year/:number", queries.deleteDevis);
+
+
+module.exports = router;

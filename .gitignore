@@ -105,3 +105,7 @@ dist
 
 # IDE config
 .idea/
+
+# env variables
+config/config.json
+
